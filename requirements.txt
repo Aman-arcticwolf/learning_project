@@ -1,0 +1,34 @@
+# Core PySpark and Data Processing
+pyspark==3.5.0
+pyiceberg[glue,s3fs]==0.6.0
+boto3==1.34.0
+botocore==1.34.0
+
+# Entity Resolution & Deduplication
+fuzzywuzzy==0.18.0
+python-Levenshtein==0.25.0
+jellyfish==1.0.3
+
+# ML and Model Registry
+mlflow==2.9.2
+scikit-learn==1.3.2
+
+# Data Quality and Validation
+pydantic==2.5.3
+great-expectations==0.18.8
+
+# Testing
+pytest==7.4.3
+pytest-cov==4.1.0
+pytest-mock==3.12.0
+moto==4.2.11  # Mock AWS services
+
+# Code Quality
+black==23.12.1
+flake8==6.1.0
+pylint==3.0.3
+mypy==1.7.1
+
+# Utilities
+python-dotenv==1.0.0
+pyyaml==6.0.1

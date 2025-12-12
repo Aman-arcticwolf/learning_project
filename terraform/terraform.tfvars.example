@@ -1,0 +1,21 @@
+# Terraform Configuration Example
+# Copy this to terraform.tfvars and customize for your deployment
+
+aws_region      = "us-east-1"
+environment     = "dev"
+project_name    = "data-ai-pipeline"
+s3_bucket_name  = "corporate-data-pipeline-unique-name"  # Must be globally unique
+
+emr_release_label = "emr-6.15.0"
+emr_instance_type = "m5.xlarge"
+emr_instance_count = 3
+
+enable_mwaa = false  # Set to true to enable Managed Airflow
+
+vpc_cidr = "10.0.0.0/16"
+
+tags = {
+  Owner       = "YourName"
+  Department  = "DataEngineering"
+  CostCenter  = "Engineering"
+}
